@@ -1,0 +1,39 @@
+:root {
+  --color-b0: #0d1117;
+  --color-b1: #161b22;
+  --color-b2: #21262d;
+  --color-b3: #89929b;
+  --color-b4: #c6cdd5;
+  --color-b5: #ecf2f8;
+  --color-red: #fa7970;
+  --color-orange: #faa356;
+  --color-green: #7ce38b;
+  --color-lightblue: #a2d2fb;
+  --color-blue: #77bdfb;
+  --color-purple: #cea5fb;
+}
+
+[data-theme='Light'] {
+  --color-b5: #0d1117;
+  --color-b4: #161b22;
+  --color-b3: #21262d;
+  --color-b2: #89929b;
+  --color-b1: #c6cdd5;
+  --color-b0: #ecf2f8;
+  --color-red: #DB524E;
+  --color-blue: #0d33a5;
+  --color-lightblue: #2076d8;
+}
+
+@font-face {
+  font-family: "Iosevka";
+  src: local("Iosevka"), url(../assets/fonts/Iosevka.ttf) format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  transition: all .5s;
+}

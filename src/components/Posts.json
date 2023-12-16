@@ -1,0 +1,14 @@
+{
+  "blogs": [
+    {
+      "title": "First Post",
+      "date": "2023/12/15",
+      "paragraphs": [
+        "This is my first blog on my personal website. In the past, I've already created a few personal websites, but hopefully this is the one I'm going to stick with until the end.",
+        "I created this blog page to document some interesting things in my journey through computer science, so hopefully there will be much more posts to come.",
+        "Keep checking this page for any more updates :)",
+        "In the meantime, lets test some formatting out. <code>Code block</code>, <b>Bold</b>, <i>Italics</i>. (Maybe I should add LaTeX formatting to this)"
+      ]
+    }
+  ]
+}

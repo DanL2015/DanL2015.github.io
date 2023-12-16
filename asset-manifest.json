@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.cacf0578.css",
+    "main.css": "/static/css/main.71328768.css",
     "main.js": "/static/js/main.622f7898.js",
     "static/media/Iosevka.ttf": "/static/media/Iosevka.10fa0fd12d40e7c474ed.ttf",
     "static/media/p1.png": "/static/media/p1.86e17b43474ad2b399f7.png",
     "index.html": "/index.html",
-    "main.cacf0578.css.map": "/static/css/main.cacf0578.css.map",
+    "main.71328768.css.map": "/static/css/main.71328768.css.map",
     "main.622f7898.js.map": "/static/js/main.622f7898.js.map"
   },
   "entrypoints": [
-    "static/css/main.cacf0578.css",
+    "static/css/main.71328768.css",
     "static/js/main.622f7898.js"
   ]
 }

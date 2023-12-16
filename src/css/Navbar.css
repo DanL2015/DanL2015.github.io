@@ -28,6 +28,11 @@
   margin: 4px;
 }
 
+.button:hover {
+  background-color: var(--color-lightblue);
+  color: var(--color-b0);
+}
+
 .button-active {
   text-decoration: none;
   font-family: "Roboto Condensed";
@@ -55,6 +60,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.theme-button:hover {
+  background-color: var(--color-b5);
+  color: var(--color-b0);
 }
 
 .name {

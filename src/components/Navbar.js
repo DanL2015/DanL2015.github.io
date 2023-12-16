@@ -32,11 +32,11 @@ function Navbar({ curPage }) {
           className="theme-button"
           unselectable="on"
           onClick={() => {
-            setTheme(theme === "Dark" ? "Light" : "Dark");
+            setTheme(theme === "Light" ? "Dark" : "Light");
           }}
         >
           <FaLightbulb className="theme-icon" />
-          {theme}
+          {theme || "Dark"}
         </div>
         <div className="name">Daniel Liu</div>
       </div>

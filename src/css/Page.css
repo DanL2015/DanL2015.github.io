@@ -1,9 +1,5 @@
 @import url("./Global.css");
 
-body {
-  background-color: var(--color-b1);
-}
-
 h1 {
   font-family: "Roboto Condensed";
   font-size: 24px;
@@ -55,16 +51,16 @@ li {
 }
 
 img {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    max-width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 100%;
 }
 
 iframe {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    height: 800px;
-    width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 800px;
+  width: 100%;
 }
 
 li b {
@@ -72,14 +68,14 @@ li b {
 }
 
 code {
-    font-family: "Iosevka";
-    background-color: var(--color-b0);
-    padding: 2px;
+  font-family: "Iosevka";
+  background-color: var(--color-b0);
+  padding: 2px;
 }
 
 .background {
-    min-height: 100vh;
-    background: var(--color-b0);
+  min-height: 100vh;
+  background: var(--color-b0);
 }
 
 .l-container {
@@ -92,10 +88,10 @@ code {
 }
 
 @media screen and (max-width: 900px) {
-    .l-container {
-        margin-bottom: 0px;
-        margin-right: 16px;
-    }
+  .l-container {
+    margin-bottom: 0px;
+    margin-right: 16px;
+  }
 }
 
 .r-container {
@@ -108,10 +104,10 @@ code {
 }
 
 @media screen and (max-width: 900px) {
-    .r-container {
-        margin-top: 0px;
-        margin-left: 16px;
-    }
+  .r-container {
+    margin-top: 0px;
+    margin-left: 16px;
+  }
 }
 
 .h-container {
@@ -130,12 +126,15 @@ code {
 .section {
   margin: 16px;
   padding: 20px;
-  background: var(--color-b1);
+  background-color: var(--color-b1);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
 }
 
 .contact-group {
-    margin-top: 8px;
-    margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .contact-icon {
@@ -174,7 +173,7 @@ code {
 }
 
 .project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

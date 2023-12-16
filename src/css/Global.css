@@ -11,6 +11,8 @@
   --color-lightblue: #a2d2fb;
   --color-blue: #77bdfb;
   --color-purple: #cea5fb;
+  --shadow: 0px 7px 20px 0px #c6cdd508;
+  --border-radius: 2px;
 }
 
 [data-theme='Light'] {
@@ -23,6 +25,7 @@
   --color-red: #DB524E;
   --color-blue: #0d33a5;
   --color-lightblue: #2076d8;
+  --shadow: 0px 7px 29px 0px #0d111730;
 }
 
 @font-face {

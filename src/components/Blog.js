@@ -8,18 +8,22 @@ function Blog() {
   const [theme, setTheme] = useLocalStorageState("theme", "Dark");
   let posts = JSON.parse(JSON.stringify(json));
   return (
-    <div className="background" data-theme = {theme}>
+    <div className="background" data-theme={theme}>
       <Navbar curPage="Blog" />
       <div className="h-container">
         <div className="l-container">
           <div className="section">
             <h1>Blog</h1>
             <hr></hr>
-            {posts.blogs &&
-              posts.blogs.map((post, index) => (
-                <Post title={post.title} date = {post.date} paragraphs={post.paragraphs}></Post>
-              ))}
           </div>
+          {posts.blogs &&
+            posts.blogs.map((post, index) => (
+              <Post
+                title={post.title}
+                date={post.date}
+                paragraphs={post.paragraphs}
+              ></Post>
+            ))}
         </div>
         <Right></Right>
       </div>

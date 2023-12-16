@@ -8,6 +8,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  position: relative;
 }
 
 .group {
@@ -24,8 +27,11 @@
   font-size: 20px;
   background-color: var(--color-b0);
   color: var(--color-b5);
-  padding: 4px;
+  padding: 6px;
   margin: 4px;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .button:hover {
@@ -39,8 +45,11 @@
   font-size: 20px;
   background-color: var(--color-blue);
   color: var(--color-b1);
-  padding: 4px;
+  padding: 6px;
   margin: 4px;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .theme-button {
@@ -48,7 +57,7 @@
   font-size: 20px;
   background-color: var(--color-b0);
   color: var(--color-b5);
-  padding: 4px;
+  padding: 6px;
   margin: 4px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -60,6 +69,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .theme-button:hover {
@@ -72,7 +84,6 @@
   font-weight: 200;
   font-size: 20px;
   color: var(--color-b5);
-  background-color: var(--color-b1);
   text-align: center;
   padding: 4px;
   margin: 4px;

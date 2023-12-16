@@ -91,7 +91,7 @@ code {
   flex: 3;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .l-container {
         margin-bottom: 0px;
         margin-right: 16px;
@@ -107,7 +107,7 @@ code {
   flex: 1;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .r-container {
         margin-top: 0px;
         margin-left: 16px;
@@ -120,7 +120,7 @@ code {
   background-color: var(--color-b0);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .h-container {
     display: flex;
     flex-direction: column;

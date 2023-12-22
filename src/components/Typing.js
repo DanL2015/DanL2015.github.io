@@ -16,7 +16,10 @@ function Typing() {
   let wordSource = JSON.parse(JSON.stringify(wordsJson));
   const [theme, setTheme] = useLocalStorageState("theme", "Dark");
   const [lastTimes, setLastTimes] = useLocalStorageState("lastTimes", []);
-  const [lastSTime, setLastSTime] = useLocalStorageState("lastSTime", Date.now());
+  const [lastSTime, setLastSTime] = useLocalStorageState(
+    "lastSTime",
+    Date.now()
+  );
   const [fType, setFType] = useState("Words");
   const [num, setNum] = useState(15);
   const [tType, setTType] = useState("Normal");
@@ -65,7 +68,7 @@ function Typing() {
               index: times.length,
               word: words[wordIndex],
             },
-          ]
+          ];
           ltimes.shift();
           setLastTimes(ltimes);
           reset();
@@ -170,7 +173,7 @@ function Typing() {
           <div className="section">
             <h1>Results:</h1>
             <hr></hr>
-            {!started && lastTimes.length > 0 && lastSTime && (
+            {!started && lastTimes && lastTimes.length > 0 && lastSTime && (
               <p>
                 Time Taken:{" "}
                 {(lastTimes[lastTimes.length - 1].time - lastSTime) / 1000}{" "}
@@ -179,7 +182,8 @@ function Typing() {
             )}
             <p>
               Avg WPM:{" "}
-              {lastTimes.length > 0 &&
+              {lastTimes &&
+              lastTimes.length > 0 &&
               lastSTime &&
               lastTimes[lastTimes.length - 1].time !== lastSTime
                 ? Math.round(
@@ -192,19 +196,21 @@ function Typing() {
                   )
                 : 0}
             </p>
-            <ResponsiveContainer height={400}>
-              <LineChart data={lastTimes}>
-                <Line
-                  className="chartLine"
-                  type="monotone"
-                  dataKey="wpm"
-                  stroke="#77bdfb"
-                />
-                <XAxis className="chart" dataKey="word" />
-                <YAxis className="chart" />
-                <Tooltip className="chart" />
-              </LineChart>
-            </ResponsiveContainer>
+            {lastTimes && (
+              <ResponsiveContainer height={400}>
+                <LineChart data={lastTimes}>
+                  <Line
+                    className="chartLine"
+                    type="monotone"
+                    dataKey="wpm"
+                    stroke="#77bdfb"
+                  />
+                  <XAxis className="chart" dataKey="word" />
+                  <YAxis className="chart" />
+                  <Tooltip className="chart" />
+                </LineChart>
+              </ResponsiveContainer>
+            )}
           </div>
         </div>
         <div className="r-container">

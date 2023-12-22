@@ -40,3 +40,9 @@
   padding: 0px;
   transition: all .5s;
 }
+
+.shadow {
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}

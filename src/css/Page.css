@@ -73,6 +73,56 @@ code {
   padding: 2px;
 }
 
+button {
+  background: var(--color-b0);
+  color: var(--color-b5);
+  border: none;
+  padding: 8px;
+  font: "Roboto Condensed";
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}
+
+button:hover {
+  background: var(--color-blue);
+  color: var(--color-b0);
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-b0);
+  color: var(--color-b5);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  font-size: 32px;
+  resize: none;
+  overflow: hidden;
+  font-family: "Iosevka";
+  line-height: 40px;
+}
+
+input {
+  background: var(--color-b0);
+  color: var(--color-b5);
+  border: none;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font: "Roboto Condensed";
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}
+
 .background {
   min-height: 100vh;
   background: var(--color-b0);
@@ -176,4 +226,75 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.display-container {
+  background: var(--color-b0);
+  max-width: 100%;
+  max-height: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+}
+
+.display-text {
+  font-family: "Iosevka";
+  font-size: 32px;
+  color: var(--color-b5);
+  margin: 8px;
+}
+
+.display-text-error {
+  font-family: "Iosevka";
+  font-size: 32px;
+  color: var(--color-red);
+  margin: 8px;
+}
+
+.display-text-finish {
+  font-family: "Iosevka";
+  font-size: 32px;
+  color: var(--color-blue);
+  margin: 8px;
+}
+
+select {
+  background: var(--color-b0);
+  color: var(--color-b5);
+  border: none;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font: "Roboto Condensed";
+  font-size: 16px;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}
+
+.chart {
+  color: var(--color-b5);
+  stroke: var(--color-b5);
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+}
+
+.chartLine {
+  color: var(--color-blue);
 }

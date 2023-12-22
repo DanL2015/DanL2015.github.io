@@ -15,8 +15,8 @@ import useLocalStorageState from "use-local-storage-state";
 function Typing() {
   let wordSource = JSON.parse(JSON.stringify(wordsJson));
   const [theme, setTheme] = useLocalStorageState("theme", "Dark");
-  const [lastTimes, setLastTimes] = useLocalStorageState("lastTimes");
-  const [lastSTime, setLastSTime] = useLocalStorageState("lastSTime");
+  const [lastTimes, setLastTimes] = useLocalStorageState("lastTimes", []);
+  const [lastSTime, setLastSTime] = useLocalStorageState("lastSTime", Date.now());
   const [fType, setFType] = useState("Words");
   const [num, setNum] = useState(15);
   const [tType, setTType] = useState("Normal");

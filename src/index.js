@@ -4,7 +4,6 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
-import Typing from "./components/Typing";
 
 const router = createHashRouter([
   {
@@ -18,10 +17,6 @@ const router = createHashRouter([
   {
     path: "blog",
     element: <Blog />,
-  },
-  {
-    path: "typing",
-    element: <Typing />,
   }
 ]);
 

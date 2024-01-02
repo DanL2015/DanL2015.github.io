@@ -26,12 +26,6 @@ function Navbar({ curPage }) {
         >
           Blog
         </Link>
-        <Link
-          to="/typing"
-          className={curPage === "Typing" ? "button-active" : "button"}
-        >
-          Typing
-        </Link>
       </div>
       <div className="group">
         <div

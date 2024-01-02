@@ -18,46 +18,6 @@ function Projects() {
               time.
             </p>
           </div>
-          <div className="section">
-            <h1>
-              <a
-                href="https://github.com/DanL2015/AwesomeWM"
-                target="_blank"
-                rel="noreferrer"
-              >
-                My AwesomeWM Config - Lua and Bash
-              </a>
-            </h1>
-            <hr></hr>
-            <div className="project-description">
-              <img
-                alt="My AwesomeWM Config"
-                src={require("../assets/images/p1.png")}
-              />
-              <p>
-                Everything in the desktop is customized with the help of
-                AwesomeWM widgets written in Lua. This includes the window
-                decorations, the bottom dock, the top bar, the app launcher, the
-                notifications, and the panel widgets. The widgets are powered
-                bash scripts running in the background. AwesomeWM allows me to
-                have the usability of a desktop environment without sacrificing
-                the speed of a lightweight window manager.
-              </p>
-              <p>
-                Some features of the desktop include colorscheme and wallpaper
-                switching, user interface for the most common settings, a custom
-                lockscreen, and smooth animations. In the future, I hope to add
-                much more!
-              </p>
-              <p>
-                My initial inspiration for the widget arrangement was based on
-                the MacOS desktop theme, as seen by the top bar, the dock, and
-                the look of the side panel. However, I also customized it
-                according to my tastes, with a flat, sharp, low contrast dark
-                theme that remains aesthetically pleasing.
-              </p>
-            </div>
-          </div>
 
           <div className="section">
             <h1>

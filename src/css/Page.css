@@ -163,7 +163,6 @@ input {
 .h-container {
   display: flex;
   flex-direction: row;
-  background-color: var(--color-b0);
 }
 
 @media screen and (max-width: 900px) {

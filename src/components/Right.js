@@ -56,7 +56,7 @@ function Right() {
         <div className="contact-group">
           <FaLinkedin className="contact-icon" />
           <a
-            href="https://www.aedin.com/in/daniel-liu-2004/"
+            href="https://www.linkedin.com/in/daniel-liu-2004/"
             rel="noreferrer"
             target="_blank"
           >

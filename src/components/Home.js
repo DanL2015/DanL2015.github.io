@@ -41,6 +41,9 @@ function Home() {
                 Science - <b>A+</b>
               </li>
               <li>
+                <a href="https://www.stat20.org/">STAT 20</a>: Introduction to Probability and Statistics - <b>A+</b>
+              </li>
+              <li>
                 <a href="https://math.berkeley.edu/courses/choosing/lowerdivcourses/math54">
                   MATH 54
                 </a>
@@ -62,10 +65,13 @@ function Home() {
                 <a href="https://www.eecs70.org/">CS 70</a>: Discrete
                 Mathematics and Probability Theory - <b>A</b>
               </li>
+              <li>
+                <a href="https://www.cs61c.org/">CS 61C</a>: Great Ideas in Computer Architecture - <b>A+</b>
+              </li>
             </ul>
           </div>
         </div>
-      <Right></Right>
+        <Right></Right>
       </div>
     </div>
   );

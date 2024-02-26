@@ -68,6 +68,18 @@ function Home() {
               <li>
                 <a href="https://www.cs61c.org/">CS 61C</a>: Great Ideas in Computer Architecture - <b>A+</b>
               </li>
+              <li>
+                <a href="https://ds100.org/">Data 100</a>: Principles and Techniques in Data Science - <b>Current</b>
+              </li>
+              <li>
+                <a href="https://cs161.org/">CS 161</a>: Computer Security - <b>Current</b>
+              </li>
+              <li>
+                <a href="https://inst.eecs.berkeley.edu/~cs188/">CS 188</a>: Introduction to Artificial Intelligence - <b>Current</b>
+              </li>
+              <li>
+                <a href="https://cs170.org/">CS 170</a>: Efficient Algorithms and Intractable Problems - <b>Current</b>
+              </li>
             </ul>
           </div>
         </div>

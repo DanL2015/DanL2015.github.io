@@ -29,6 +29,7 @@ export default function Home() {
     "NumPy",
     "Pandas",
     "Seaborn",
+    "SciKit-Learn",
   ];
   return (
     <main className="content-container">

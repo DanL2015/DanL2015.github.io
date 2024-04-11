@@ -39,9 +39,9 @@ export default function Home() {
           speed={10}
           repeat={0}
           cursor={true}
-          className="text-6xl text-b5 font-sans m-4"
+          className="text-3xl md:text-6xl text-b5 font-sans m-4"
         ></TypeAnimation>
-        <div className="text-2xl text-b3 self-end m-4">
+        <div className="text-lg md:text-2xl text-b3 md:self-end m-4">
           <b>Computer Science</b> and <b>Data Science</b> at <b>UC Berkeley</b>
         </div>
       </div>

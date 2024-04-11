@@ -25,11 +25,11 @@ function Projects() {
                       target="_blank"
                     >
                       <div className="section-outline">
-                        <div className="flex-container">
+                        <div className="flex-container flex-col md:flex-row">
                           <div className="text-blue text-2xl">
                             {project.name}
                           </div>
-                          <div className="flex-container m-2">
+                          <div className="flex-container m-2 justify-center">
                             {project.skills &&
                               project.skills.map((skill, index) => {
                                 return (
@@ -42,7 +42,7 @@ function Projects() {
                                 );
                               })}
                           </div>
-                          <FaChevronRight></FaChevronRight>
+                          <FaChevronRight className="hidden md:flex"></FaChevronRight>
                         </div>
                         <div
                           dangerouslySetInnerHTML={{

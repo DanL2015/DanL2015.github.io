@@ -33,7 +33,7 @@
   }
 
   .content-container {
-    @apply mx-80 my-16 flex flex-col;
+    @apply mx-8 md:mx-80 my-16 flex flex-col;
   }
   .section {
     @apply mx-2 my-4 flex flex-col;
@@ -51,11 +51,6 @@
 
   h2 {
     @apply text-b5 text-2xl my-1;
-  }
-
-  hr {
-    @apply border-solid border-b2;
-    border-width: 1px;
   }
 
   b {

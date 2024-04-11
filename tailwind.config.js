@@ -5,6 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     fontFamily: {
       sans: ["Gabarito", "Rubik", "Dosis"],
@@ -18,17 +19,26 @@ module.exports = {
         b3: "#89929b",
         b4: "#c6cdd5",
         b5: "#ecf2f8",
-        red: "#fa7970",
+        red: {
+          light: "#db524e",
+          DEFAULT: "#fa7970",
+        },
         orange: "#faa356",
         green: "#7ce38b",
-        lightblue: "#a2d2fb",
-        blue: "#77bdfb",
+        lightblue: {
+          light: "#2076d8",
+          DEFAULT: "#a2d2fb",
+        },
+        blue: {
+          light: "#0d33a5",
+          DEFAULT: "#77bdfb",
+        },
         purple: "#cea5fb",
       },
       screens: {
-        sm: "576px",
-        md: "1000px",
-        lg: "1400px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
       },
     },
   },

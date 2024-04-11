@@ -9,7 +9,7 @@ export default function Card({ post }) {
         <div className="flex flex-col flex-1">
           <div className="flex-container flex-row md:justify-start items-center">
             <div className="flex-container">
-              <h2 className="text-b3">{words[0]}&nbsp;</h2>
+              <h2 className="alt">{words[0]}&nbsp;</h2>
               <h2>{words.slice(1).join(" ")}</h2>
             </div>
             <div className="flex-container hidden md:flex">
@@ -23,11 +23,11 @@ export default function Card({ post }) {
                 })}
             </div>
             <div className="flex-1"></div>
-            <div className="text-b3 text-lg hidden md:flex justify-self-end">{post.date}</div>
+            <div className="text-b2 dark:text-b3 text-lg hidden md:flex justify-self-end">{post.date}</div>
           </div>
-          <div className="text-b4 text-sm md:text-lg">{post.description}</div>
+          <div className="text-b1 dark:text-b4 text-sm md:text-lg">{post.description}</div>
         </div>
-        <FaChevronRight className="text-b4 flex md:hidden w-8 h-8"></FaChevronRight>
+        <FaChevronRight className="text-b1 dark:text-b4 flex md:hidden w-8 h-8"></FaChevronRight>
       </div>
     </Link>
   );

@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Caret from "./components/caret";
+import { Providers } from "./providers";
 
 export const metadata = {
   title: "Daniel's Website",
@@ -10,11 +10,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="bg-b0">
-        <Navbar></Navbar>
-        <Caret></Caret>
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-b5 dark:bg-b0">
+        <Providers>
+          <Navbar></Navbar>
+          <Caret></Caret>
+          {children}
+        </Providers>
       </body>
     </html>
   );

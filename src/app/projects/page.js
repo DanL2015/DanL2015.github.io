@@ -11,7 +11,7 @@ function Projects() {
           return (
             <div className="section" key={index}>
               <div className="flex-container justify-center">
-                <h1 className="text-b3">{words[0]}&nbsp;</h1>
+                <h1 className="alt">{words[0]}&nbsp;</h1>
                 <h1>{words.slice(1).join(" ")}</h1>
               </div>
               {section.projects &&
@@ -26,7 +26,7 @@ function Projects() {
                     >
                       <div className="section-outline">
                         <div className="flex-container flex-col md:flex-row">
-                          <div className="text-blue text-2xl">
+                          <div className="text-blue-light dark:text-blue text-2xl">
                             {project.name}
                           </div>
                           <div className="flex-container m-2 justify-center">

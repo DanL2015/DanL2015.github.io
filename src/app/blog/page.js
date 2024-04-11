@@ -9,7 +9,7 @@ export default function Home() {
       <div className="content-container">
         <div className="section">
           <div className="flex-container">
-            <h1 className="text-b3">Welcome&nbsp;</h1>
+            <h1 className="alt">Welcome&nbsp;</h1>
             <h1>to my Blog!</h1>
           </div>
         </div>

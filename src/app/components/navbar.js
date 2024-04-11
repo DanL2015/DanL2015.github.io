@@ -1,60 +1,76 @@
 "use client";
-import { FaLightbulb } from "react-icons/fa";
+import { FiSun, FiMoon } from "react-icons/fi";
 import { IoMdMenu } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 import { useState } from "react";
 
 function Navbar({ curPage }) {
   const [menu, setMenu] = useState(false);
+  const { theme, setTheme } = useTheme();
   const pathName = usePathname();
   return (
     <main>
       <div className="mx-10 my-8 flex flex-row justify-between items-center">
         <Link href="/">
           <div className="flex-container">
-            <div className="text-b5 text-2xl font-['Rubik'] font-bold">d</div>
-            <div className="text-blue text-2xl font-['Rubik'] font-bold">.</div>
-            <div className="text-b4 text-2xl font-['Rubik'] font-bold">liu</div>
+            <div className="dark:text-b5 text-b0 text-2xl font-['Rubik'] font-bold">
+              d
+            </div>
+            <div className="text-blue-light dark:text-blue text-2xl font-['Rubik'] font-bold">.</div>
+            <div className="dark:text-b4 text-b1 text-2xl font-['Rubik'] font-bold">
+              liu
+            </div>
           </div>
         </Link>
         <div className="flex-container hidden md:flex">
           <Link
             href="/"
             className={
-              "text-2xl font-['Dosis'] hover:text-lightblue mx-2 " +
-              (pathName === "/" ? "text-blue" : "text-b4")
+              "text-2xl font-['Dosis'] hover:dark:text-lightblue hover:text-lightblue-light mx-2 " +
+              (pathName === "/"
+                ? "text-blue-light dark:text-blue"
+                : "dark:text-b4 text-b1")
             }
           >
             home
           </Link>
-          <div className="text-xl text-b2 font-['Dosis'] mx-2">{"//"}</div>
+          <div className="text-xl dark:text-b2 text-b3 font-['Dosis'] mx-2">
+            {"//"}
+          </div>
           <Link
             href="/projects"
             className={
-              "text-2xl font-['Dosis'] hover:text-lightblue mx-2 " +
-              (pathName === "/projects" ? "text-blue" : "text-b4")
+              "text-2xl font-['Dosis'] hover:dark:text-lightblue hover:text-lightblue-light mx-2 " +
+              (pathName === "/projects"
+                ? "text-blue-light dark:text-blue"
+                : "dark:text-b4 text-b1")
             }
           >
             projects
           </Link>
-          <div className="text-xl text-b2 font-['Dosis'] mx-2">{"//"}</div>
+          <div className="text-xl dark:text-b2 text-b3 font-['Dosis'] mx-2">
+            {"//"}
+          </div>
           <Link
             href="/blog"
             className={
-              "text-2xl font-['Dosis'] hover:text-lightblue mx-2 " +
-              (pathName === "/blog" ? "text-blue" : "text-b4")
+              "text-2xl font-['Dosis'] hover:dark:text-lightblue hover:text-lightblue-light mx-2 " +
+              (pathName === "/blog"
+                ? "text-blue-light dark:text-blue"
+                : "dark:text-b4 text-b1")
             }
           >
             blog
           </Link>
           <div
-            className="cursor-pointer text-2xl mx-2 p-2 rounded text-b4 hover:text-b0 hover:bg-b4"
+            className="cursor-pointer text-2xl mx-2 p-2 rounded text-b1 dark:text-b4 hover:text-b5 dark:hover:text-b0 hover:bg-b1 dark:hover:bg-b4"
             onClick={() => {
-              setTheme(theme === "Light" ? "Dark" : "Light");
+              setTheme(theme === "light" ? "dark" : "light");
             }}
           >
-            <FaLightbulb className="theme-icon" />
+            {theme === "light" ? <FiSun /> : <FiMoon />}
           </div>
         </div>
         <div
@@ -68,7 +84,10 @@ function Navbar({ curPage }) {
         </div>
       </div>
       <div
-        className={"mx-10 flex flex-col justify-center items-start md:hidden " + (menu ? "visible" : "hidden")}
+        className={
+          "mx-10 flex flex-col justify-center items-start md:hidden " +
+          (menu ? "visible" : "hidden")
+        }
       >
         <Link
           href="/"

@@ -32,6 +32,10 @@
     src: url(../assets/fonts/Iosevka.ttf) format("truetype");
   }
 
+  * {
+    @apply transition-colors duration-500;
+  }
+
   .content-container {
     @apply mx-8 md:mx-80 my-16 flex flex-col;
   }
@@ -39,38 +43,42 @@
     @apply mx-2 my-4 flex flex-col;
   }
   .section-bg {
-    @apply bg-b1 rounded p-8 mx-2 my-4 flex flex-col;
+    @apply dark:bg-b1 bg-b4 rounded p-8 mx-2 my-4 flex flex-col;
   }
   .section-outline {
-    @apply border-b1 border-2 rounded-lg p-8 mx-2 my-4 flex flex-col;
+    @apply border-b4 dark:border-b1 border-2 rounded-lg p-8 mx-2 my-4 flex flex-col;
   }
 
   h1 {
-    @apply text-b5 text-3xl my-1;
+    @apply text-b0 dark:text-b5 text-3xl my-1;
   }
 
   h2 {
-    @apply text-b5 text-2xl my-1;
+    @apply text-b0 dark:text-b5 text-2xl my-1;
   }
 
   b {
-    @apply text-b5;
+    @apply text-b0 dark:text-b5;
   }
 
   p {
-    @apply text-b3 text-xl my-2 font-sans text-wrap;
+    @apply text-b2 dark:text-b3 text-xl my-2 text-wrap;
   }
 
   li {
-    @apply m-2 text-xl text-b4;
+    @apply m-2 text-xl text-b1 dark:text-b4;
   }
 
   li b {
-    @apply text-blue;
+    @apply text-blue-light dark:text-blue;
   }
 
   a {
-    @apply text-b3;
+    @apply text-b2 dark:text-b3;
+  }
+
+  .alt {
+    @apply text-b2 dark:text-b3;
   }
 
   .flex-container {
@@ -80,15 +88,17 @@
     @apply flex flex-col border-solid rounded border-2;
   }
   .tag-container {
-    @apply bg-b1 border-b2 text-blue mx-8 px-2 py-1 text-lg border-solid border-2 rounded;
+    @apply dark:bg-b1 bg-b4 border-b3 dark:border-b2 text-blue-light dark:text-blue mx-8 px-2 py-1 text-lg border-solid border-2 rounded;
   }
-
   .skill-container {
-    @apply font-mono m-2 text-b4 bg-b1 border-2 rounded p-2 border-b2 min-w-14 flex justify-center;
+    @apply font-mono m-2 text-b1 dark:text-b4 bg-b4 dark:bg-b1 border-2 rounded p-2 border-b3 dark:border-b2 min-w-14 flex justify-center;
+  }
+  .icon-container {
+    @apply text-b1 dark:text-b4 hover:text-blue-light dark:hover:text-blue text-3xl m-2;
   }
 
   .markdown {
-    @apply text-b4;
+    @apply text-b1 dark:text-b4 font-['Dosis'];
   }
 
   .markdown h1 {
@@ -110,7 +120,7 @@
     @apply font-sans text-base font-bold my-2;
   }
   .content pre {
-    @apply p-8 font-mono my-8 rounded-lg bg-b2;
+    @apply p-8 font-mono my-8 rounded-lg bg-b3 dark:bg-b2;
   }
   .content code {
     @apply px-0;
@@ -119,9 +129,9 @@
     @apply font-sans;
   }
   .markdown ul {
-    @apply list-disc ml-4 my-2 text-b4 marker:text-b4;
+    @apply list-disc ml-4 my-2 marker:text-b1 dark:marker:text-b4;
   }
   .markdown ol {
-    @apply list-decimal ml-4 my-2 text-b4 marker:text-b4;
+    @apply list-decimal ml-4 my-2 marker:text-b1 dark:marker:text-b4;
   }
 }

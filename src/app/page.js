@@ -39,16 +39,16 @@ export default function Home() {
           speed={10}
           repeat={0}
           cursor={true}
-          className="text-3xl md:text-6xl text-b5 font-sans m-4"
+          className="text-3xl md:text-6xl dark:text-b5 text-b0 font-sans m-4"
         ></TypeAnimation>
-        <div className="text-lg md:text-2xl text-b3 md:self-end m-4">
+        <div className="text-lg md:text-2xl dark:text-b3 text-b2 md:self-end m-4">
           <b>Computer Science</b> and <b>Data Science</b> at <b>UC Berkeley</b>
         </div>
       </div>
       <Break></Break>
       <div className="section">
         <div className="flex-container">
-          <h1 className="text-b3">About&nbsp;</h1>
+          <h1 className="alt">About&nbsp;</h1>
           <h1>Me</h1>
         </div>
       </div>
@@ -69,34 +69,34 @@ export default function Home() {
       </div>
       <div className="flex-container">
         <a href="https://github.com/DanL2015/" rel="noreferrer" target="_blank">
-          <FaGithub className="text-b4 hover:text-blue hover: text-3xl m-2" />
+          <FaGithub className="icon-container" />
         </a>
         <a
           href="https://www.linkedin.com/in/daniel-liu-2004/"
           rel="noreferrer"
           target="_blank"
         >
-          <FaLinkedin className="text-b4 hover:text-blue text-3xl m-2" />
+          <FaLinkedin className="icon-container" />
         </a>
         <a
           href="mailto:danielliu@berkeley.edu"
           rel="noreferrer"
           target="_blank"
         >
-          <IoMdMail className="text-b4 hover:text-blue text-3xl m-2" />
+          <IoMdMail className="icon-container" />
         </a>
         <a
           href="https://drive.google.com/file/d/1xV2n1RpcpustAJ4uy5K7xyC20DJdYeH2/view?usp=sharing"
           rel="noreferrer"
           target="_blank"
         >
-          <FaFilePdf className="text-b4 hover:text-blue text-3xl m-2" />
+          <FaFilePdf className="icon-container" />
         </a>
       </div>
       <Break></Break>
       <div className="section">
         <div className="flex-container">
-          <h1 className="text-b3">Skill&nbsp;</h1>
+          <h1 className="alt">Skill&nbsp;</h1>
           <h1>Set</h1>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function Home() {
       <Break></Break>
       <div className="section">
         <div className="flex-container">
-          <h1 className="text-b3">Courses&nbsp;</h1>
+          <h1 className="alt">Courses&nbsp;</h1>
           <h1>Taken</h1>
         </div>
       </div>

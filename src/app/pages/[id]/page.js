@@ -41,7 +41,7 @@ export default function Post({ params }) {
     <main className="content-container">
       <div className="flex-container">
         <div className="flex-container">
-          <h1 className="text-b3">{words[0]}&nbsp;</h1>
+          <h1 className="alt">{words[0]}&nbsp;</h1>
           <h1>{words.slice(1).join(" ")}</h1>
         </div>
         {post.data.tags &&
@@ -53,7 +53,7 @@ export default function Post({ params }) {
             );
           })}
         <div className="flex-1"></div>
-        <div className="text-b3 text-xl">{post.data.date}</div>
+        <div className="text-b2 dark:text-b3 text-xl">{post.data.date}</div>
       </div>
 
       <Break></Break>
@@ -85,7 +85,7 @@ export default function Post({ params }) {
         {post.content}
       </Markdown>
       <div className="flex-container my-4 justify-end">
-        <h1 className="text-b3">Daniel&nbsp;</h1>
+        <h1 className="alt">Daniel&nbsp;</h1>
         <h1>Liu</h1>
       </div>
     </main>

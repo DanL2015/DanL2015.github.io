@@ -54,14 +54,14 @@ export default function Home() {
       </div>
       <div className="section">
         <p>
-          Welcome to my website! My name is <b>Daniel Liu</b>, and I'm a{" "}
+          Welcome to my website! My name is <b>Daniel Liu</b>, and I&apos;m a{" "}
           <b>Sophomore</b> at <b>UC Berkeley</b> majoring in{" "}
           <b>Computer Science</b> and minoring in <b>Data Science</b>. I am also
-          a part of Berkeley's <b>Upsilon Pi Epsilon (UPE)</b> chapter.
+          a part of Berkeley&apos;s <b>Upsilon Pi Epsilon (UPE)</b> chapter.
         </p>
         <p>
-          Programming is both my hobby and passion, and I'm always looking to
-          expand my programming skills. I'm interested in every facet of
+          Programming is both my hobby and passion, and I&apos;m always looking to
+          expand my programming skills. I&apos;m interested in every facet of
           programming, including <b>Data Structures and Algorithms</b>,{" "}
           <b>Fullstack Web Development</b>, <b>Cybersecurity</b> and{" "}
           <b>Machine Learning and Artificial Intelligence</b>.

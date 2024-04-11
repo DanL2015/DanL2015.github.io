@@ -1,0 +1,72 @@
+[
+  {
+    "section": "Personal Projects",
+    "projects": [
+      {
+        "name": "Personal Blog",
+        "description": "<p>I created a website to be my blog, where I share and post about anything computer-related that I find interesting.</p><p>To create the website, I used Next.js and TailwindCSS for the frontend and hosted it on Vercel. Each blog post is formatted from a Markdown file that is compiled by Next.js into static webpages during the build process, allowing me to easily add new posts by just adding new Markdown files. The website includes features such as LaTeX integration for math equations and code syntax highlighting, giving me the things necessary to post about all my favorite topics.</p>",
+        "skills": ["Next.js", "TailwindCSS"],
+        "link": "https://github.com/DanL2015/blog"
+      },
+      {
+        "name": "Rate My GSI",
+        "description": "<p>Rate My GSI is a website that allows users to rate and comment on their class GSIs and TAs. To create the website, I utilized the MERN (MongoDB, Express, React.js, Node.js) stack.</p><p>For the frontend, I used the React Material UI library to create the user interface, based on a Figma mockup. I used Node.js with Express and Mongoose for the backend to interact with a MongoDB database. To facilitate communication between the two, I created database models and routes in the backend, which I accessed through the frontend through the Axios library.</p><p>This comprehensive website incorporates a wide array of features, including advanced filtering and searching functionalities for Graduate Student Instructors (GSIs), an immersive display of their profiles and accompanying information, the ability for users to contribute comments and ratings, and a streamlined form for submitting new GSIs.</p>",
+        "skills": ["React.js", "Node.js", "MongoDB", "Express", "Figma"],
+        "link": "https://github.com/DanL2015/RateMyGSI"
+      },
+      {
+        "name": "Pathfinding Algorithm Visualizer",
+        "description": "<p>Pathfinding Algorithm Visualizer is a project where I utilized C++ and SFML to visualize different pathfinding algorithms.</p><p>This interactive project allows users to select from a range of pathfinding algorithms, including DFS, BFS, Dijkstra, and A*, and apply them to either a randomly generated maze or an open area. The algorithm visually highlights the visited squares, providing insight into their distinct characteristics and behavior.</p>",
+        "skills": ["C++", "SFML", "DSA"],
+        "link": "https://github.com/DanL2015/pathfinding-algorithms"
+      },
+      {
+        "name": "Course Seat Bot",
+        "description": "<p>Course Seat Bot is a project where I created a Discord Bot that notifies the user whenever Berkeley classes have open seats</p><p>The bot uses Python and the BeautifulSoup library to fetch the HTML of the Berkeley course catalog, then filters for seat numbers and notifies the user if any new seats have been open. This can potentially allow students to skip the waitlist and enroll directly into the class and save their class schedule plans.</p>",
+        "skills": ["Python", "MongoDB"],
+        "link": "https://github.com/DanL2015/CourseSeatBot"
+      }
+    ]
+  },
+  {
+    "section": "School Projects",
+    "projects": [
+      {
+        "name": "RISC-V CPU",
+        "description": "<p>RISC-V CPU is a project where I designed a RISC-V CPU using Logism.</p><p>I designed and implemented the parts of a CPU necessary to execute nearly all of the RISC-V instructions, including the Arithmetic Logic Unit (ALU), Register File (RegFile), Immediate Generator, and datapaths.</p><p>The CPU was able to run I-type (immediate) instructions, R-type (register) instructions, B-type (branch) instructions, load and store instructions, and jumps and U-type instructions. These instructions were also pipelined, allowing for two instructions to be run per CPU cycle.</p>",
+        "skills": ["Logism"],
+        "link": "https://cs61c.org/sp24/projects/proj3"
+      },
+      {
+        "name": "BYOW",
+        "description": "<p>Build Your Own World is a 2D, procedurally generated dungeon crawler game written in Java, where the user has to collect a key to escape a maze while being chased by enemies.</p><p>I implemented a sophisticated seed-based world generation engine using Prim’s MST. The game also features restricted vision based on line of sight, interactable light sources with a robust lighting system, an immersive sound system, enemies equipped with A* pathfinding capabilities, a player shooting and combat system, and the crucial functionality to save and quit games.</p>",
+        "skills": ["Java", "DSA"],
+        "link": "https://sp23.datastructur.es/materials/proj/proj3"
+      },
+      {
+        "name": "Secure File Sharing System",
+        "description": "<p>Secure File Sharing System is a project where users can securely create, access, append, and share files securely, despite an attacker having access to the entire database, through the use of various cryptographic library functions in Go.</p><p>The system can initialize and load users on multiple devices. The users can create files, retrieve and append to these files, and also share these files so other users can access them. Of course, the system also comes with an access revocation system and prevents previously shared users from regaining access to files. The project uses symmetric encryption and HMACing to ensure integrity and confidentiality in files and RSA asymmetric encryption and digital signatures to ensure integrity and confidentiality in invitations. Some other important library functions include hashing, Argon2Key, and hash-based key derivation.</p>",
+        "skills": ["Go"],
+        "link": "https://sp24.cs161.org/proj2"
+      },
+      {
+        "name": "Machine Learning",
+        "description": "<p>During this project, I learned how to use Pytorch on various machine-learning applications, including language detection and digit classification.</p><p>To recognize handwritten digits, I began by creating a one-layer Linear neural network, using ReLU activation to combine layers and Cross-Entropy for the loss. To filter the data, I performed a convolution on the data and flattened it to enhance model performance, achieving an accuracy of over 97%. For language recognition, I used a two-layer Recurrent Neural Network to recognize the languages of words of different lengths with an accuracy of over 81%. This project helped me understand neural networks and how to edit hyperparameters such as batch size, the learning rate, layer size, number of layers, and epoch size to achieve the best models.</p>",
+        "skills": ["Python", "Pytorch"],
+        "link": "https://inst.eecs.berkeley.edu/~cs188/sp24/projects/proj5"
+      },
+      {
+        "name": "Scheme Intepreter",
+        "description": "<p>Scheme Interpreter is a project where I designed an interpreter for Scheme that translates lines of Scheme code into Python, and returns its output.</p><p>The project relies heavily on a deep understanding of Scheme and Python’s object-oriented programming. Through recursion, it parses the Scheme expressions to a custom Python object through lexical and syntactic analysis, then evaluates and outputs the resulting expression. The recursion also uses the tail recursion optimization to minimize memory usage. The final result can parse Scheme expressions like primitives, call expressions, and special forms to their resulting values.</p>",
+        "skills": ["Python", "Scheme"],
+        "link": ""
+      },
+      {
+        "name": "Snek",
+        "description": "<p>Snek is a clone of the popular game Snake written in C.</p><p>I utilized double pointers and memory management to recreate the game’s functionality, including keyboard input, randomly generating food, and snake growth and death. I also gained familiarity using cgdb to debug my code, and Valgrind to check for memory leaks.</p>",
+        "skills": ["C"],
+        "link": "https://cs61c.org/sp24/projects/proj1"
+      }
+    ]
+  }
+]

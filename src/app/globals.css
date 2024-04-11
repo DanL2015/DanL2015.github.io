@@ -2,32 +2,131 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../assets/fonts/Rubik.ttf) format("truetype");
   }
-}
+  @font-face {
+    font-family: "Gabarito";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../assets/fonts/Gabarito.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../assets/fonts/Dosis.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Iosevka";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../assets/fonts/Iosevka.ttf) format("truetype");
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .content-container {
+    @apply mx-80 my-16 flex flex-col;
+  }
+  .section {
+    @apply mx-2 my-4 flex flex-col;
+  }
+  .section-bg {
+    @apply bg-b1 rounded p-8 mx-2 my-4 flex flex-col;
+  }
+  .section-outline {
+    @apply border-b1 border-2 rounded-lg p-8 mx-2 my-4 flex flex-col;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  h1 {
+    @apply text-b5 text-3xl my-1;
+  }
+
+  h2 {
+    @apply text-b5 text-2xl my-1;
+  }
+
+  hr {
+    @apply border-solid border-b2;
+    border-width: 1px;
+  }
+
+  b {
+    @apply text-b5;
+  }
+
+  p {
+    @apply text-b3 text-xl my-2 font-sans text-wrap;
+  }
+
+  li {
+    @apply m-2 text-xl text-b4;
+  }
+
+  li b {
+    @apply text-blue;
+  }
+
+  a {
+    @apply text-b3;
+  }
+
+  .flex-container {
+    @apply flex flex-row justify-start items-center flex-wrap;
+  }
+  .post-container {
+    @apply flex flex-col border-solid rounded border-2;
+  }
+  .tag-container {
+    @apply bg-b1 border-b2 text-blue mx-8 px-2 py-1 text-lg border-solid border-2 rounded;
+  }
+
+  .skill-container {
+    @apply font-mono m-2 text-b4 bg-b1 border-2 rounded p-2 border-b2 min-w-14 flex justify-center;
+  }
+
+  .markdown {
+    @apply text-b4;
+  }
+
+  .markdown h1 {
+    @apply font-sans text-4xl font-bold my-2;
+  }
+  .markdown h2 {
+    @apply font-sans text-3xl font-bold my-2;
+  }
+  .markdown h3 {
+    @apply font-sans text-2xl font-bold my-2;
+  }
+  .markdown h4 {
+    @apply font-sans text-xl font-bold my-2;
+  }
+  .markdown h5 {
+    @apply font-sans text-lg font-bold my-2;
+  }
+  .markdown h6 {
+    @apply font-sans text-base font-bold my-2;
+  }
+  .content pre {
+    @apply p-8 font-mono my-8 rounded-lg bg-b2;
+  }
+  .content code {
+    @apply px-0;
+  }
+  .markdown p {
+    @apply font-sans;
+  }
+  .markdown ul {
+    @apply list-disc ml-4 my-2 text-b4 marker:text-b4;
+  }
+  .markdown ol {
+    @apply list-decimal ml-4 my-2 text-b4 marker:text-b4;
   }
 }

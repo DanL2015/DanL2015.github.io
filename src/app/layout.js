@@ -17,6 +17,11 @@ export default function RootLayout({ children }) {
           <Caret></Caret>
           {children}
         </Providers>
+        <script
+          defer
+          data-domain="dliu.is-a.dev"
+          src="https://analytics.is-a.dev/js/script.js"
+        ></script>
       </body>
     </html>
   );

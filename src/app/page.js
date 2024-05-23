@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { TypeAnimation } from "react-type-animation";
 import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -61,8 +61,8 @@ export default function Home() {
           a part of Berkeley&apos;s <b>Upsilon Pi Epsilon (UPE)</b> chapter.
         </p>
         <p>
-          Programming is both my hobby and passion, and I&apos;m always looking to
-          expand my programming skills. I&apos;m interested in every facet of
+          Programming is both my hobby and passion, and I&apos;m always looking
+          to expand my programming skills. I&apos;m interested in every facet of
           programming, including <b>Data Structures and Algorithms</b>,{" "}
           <b>Fullstack Web Development</b>, <b>Cybersecurity</b> and{" "}
           <b>Machine Learning and Artificial Intelligence</b>.
@@ -172,19 +172,19 @@ export default function Home() {
         <ul>
           <li>
             <a href="https://ds100.org/">Data 100</a>: Principles and Techniques
-            in Data Science - <b>Current</b>
+            in Data Science - <b>A+</b>
           </li>
           <li>
             <a href="https://cs161.org/">CS 161</a>: Computer Security -{" "}
-            <b>Current</b>
+            <b>A</b>
           </li>
           <li>
             <a href="https://inst.eecs.berkeley.edu/~cs188/">CS 188</a>:
-            Introduction to Artificial Intelligence - <b>Current</b>
+            Introduction to Artificial Intelligence - <b>A+</b>
           </li>
           <li>
             <a href="https://cs170.org/">CS 170</a>: Efficient Algorithms and
-            Intractable Problems - <b>Current</b>
+            Intractable Problems - <b>A</b>
           </li>
         </ul>
       </div>

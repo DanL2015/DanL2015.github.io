@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import Break from "./components/break";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const skills = [
@@ -25,15 +26,31 @@ export default function Home() {
     "Figma",
     "Linux",
     "Bash",
+  ];
+
+  const libraries = [
+    "Matplotlib",
     "Pytorch",
     "NumPy",
     "Pandas",
     "Seaborn",
     "SciKit-Learn",
+    "OpenMP",
+    "OpenMPI",
   ];
   return (
     <main className="content-container">
-      <div className="section-bg">
+      <motion.div
+        className="section-bg"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 },
+        }}
+      >
         <TypeAnimation
           sequence={["Hi. I'm Daniel.", 1000]}
           wrapper="span"
@@ -45,7 +62,7 @@ export default function Home() {
         <div className="text-lg md:text-2xl dark:text-b3 text-b2 md:self-end m-4">
           <b>Computer Science</b> and <b>Data Science</b> at <b>UC Berkeley</b>
         </div>
-      </div>
+      </motion.div>
       <Break></Break>
       <div className="section">
         <div className="flex-container">
@@ -69,47 +86,76 @@ export default function Home() {
         </p>
       </div>
       <div className="flex-container">
-        <a href="https://github.com/DanL2015/" rel="noreferrer" target="_blank">
+        <motion.a
+          href="https://github.com/DanL2015/"
+          rel="noreferrer"
+          target="_blank"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <FaGithub className="icon-container" />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="https://www.linkedin.com/in/daniel-liu-2004/"
           rel="noreferrer"
           target="_blank"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
         >
           <FaLinkedin className="icon-container" />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="mailto:danielliu@berkeley.edu"
           rel="noreferrer"
           target="_blank"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
         >
           <IoMdMail className="icon-container" />
-        </a>
-        <a
+        </motion.a>
+        <motion.a
           href="https://drive.google.com/file/d/1xV2n1RpcpustAJ4uy5K7xyC20DJdYeH2/view?usp=sharing"
           rel="noreferrer"
           target="_blank"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
         >
           <FaFilePdf className="icon-container" />
-        </a>
+        </motion.a>
       </div>
       <Break></Break>
       <div className="section">
         <div className="flex-container">
-          <h1 className="alt">Skill&nbsp;</h1>
-          <h1>Set</h1>
+          <h1 className="alt">Programming&nbsp;</h1>
+          <h1>Languages</h1>
+        </div>
+        <div className="flex flex-row justify-start items-center flex-wrap">
+          {skills &&
+            skills.map((name, index) => {
+              return (
+                <div className="skill-container" key={index}>
+                  {name}
+                </div>
+              );
+            })}
         </div>
       </div>
-      <div className="flex-container flex-wrap">
-        {skills &&
-          skills.map((name, index) => {
-            return (
-              <div className="skill-container" key={index}>
-                {name}
-              </div>
-            );
-          })}
+
+      <div className="section">
+        <div className="flex-container">
+          <h1 className="alt">Coding&nbsp;</h1>
+          <h1>Libraries</h1>
+        </div>
+        <div className="flex flex-row justify-start items-center flex-wrap">
+          {libraries &&
+            libraries.map((name, index) => {
+              return (
+                <div className="skill-container" key={index}>
+                  {name}
+                </div>
+              );
+            })}
+        </div>
       </div>
       <Break></Break>
       <div className="section">

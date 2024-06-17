@@ -28,7 +28,7 @@ function Caret() {
   }
 
   return (
-    <div className="animate-bounce cursor-pointer fixed flex justify-center items-center bottom-10 right-10 p-3 border-solid border-b3 dark:border-b2 bg-b4 dark:bg-b1 rounded border-2" onClick={caretClick}>
+    <div className="animate-bounce cursor-pointer fixed flex justify-center items-center bottom-10 right-10 p-3 border-solid border-b3 dark:border-b2 bg-b4/40 dark:bg-b1/40 backdrop-filter backdrop-blur-lg rounded border-2" onClick={caretClick}>
       <FaChevronUp className={scroll ? "text-b1 dark:text-b4 text-sm h-4 w-4" : "hidden"} />
       <FaChevronDown className={scroll ? "hidden" : "text-b1 dark:text-b4 text-sm h-4 w-4"} />
     </div>

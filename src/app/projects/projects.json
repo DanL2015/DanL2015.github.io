@@ -3,10 +3,10 @@
     "section": "Personal Projects",
     "projects": [
       {
-        "name": "Personal Blog",
-        "description": "<p>I created a website to be my blog, where I share and post about anything computer-related that I find interesting.</p><p>To create the website, I used Next.js and TailwindCSS for the frontend and hosted it on Vercel. Each blog post is formatted from a Markdown file that is compiled by Next.js into static webpages during the build process, allowing me to easily add new posts by just adding new Markdown files. The website includes features such as LaTeX integration for math equations and code syntax highlighting, giving me the things necessary to post about all my favorite topics.</p>",
+        "name": "Weather App",
+        "description": "<p>I developed a dynamic website that enables users to easily check local weather conditions based on their location. The site is built with Next.js and styled using TailwindCSS, ensuring a seamless and responsive user experience. It's hosted on Vercel for optimal performance and reliability.</p><p>Leveraging the power of the OpenWeatherAPI, the website converts city names into precise latitude and longitude coordinates, providing detailed hourly and weekly weather forecasts. Key features of the website include a dark and light mode, responsive design, unit conversion, and search saving.</p>",
         "skills": ["Next.js", "TailwindCSS"],
-        "link": "https://github.com/DanL2015/blog"
+        "link": "https://free-weather.vercel.app/"
       },
       {
         "name": "Rate My GSI",
@@ -54,6 +54,12 @@
         "description": "<p>During this project, I learned how to use Pytorch on various machine-learning applications, including language detection and digit classification.</p><p>To recognize handwritten digits, I began by creating a one-layer Linear neural network, using ReLU activation to combine layers and Cross-Entropy for the loss. To filter the data, I performed a convolution on the data and flattened it to enhance model performance, achieving an accuracy of over 97%. For language recognition, I used a two-layer Recurrent Neural Network to recognize the languages of words of different lengths with an accuracy of over 81%. This project helped me understand neural networks and how to edit hyperparameters such as batch size, the learning rate, layer size, number of layers, and epoch size to achieve the best models.</p>",
         "skills": ["Python", "Pytorch"],
         "link": "https://inst.eecs.berkeley.edu/~cs188/sp24/projects/proj5"
+      },
+      {
+        "name": "Reinforcement Learning",
+        "description": "<p>During this project, I simulated a Pacman game trained with reinforcement learning. I implemented value iteration, Q Learning, Approximate Q Learning, and Deep Q Learning using the Pytorch library.</p><p>During this, I solidified my understanding of Pytorch and Reinforcement Learning algorithms, including how to optimize hyperparameters such as the learning rate, number of hidden layers, hidden layer size, and batch size.</p>",
+        "skills": ["Python", "Pytorch"],
+        "link": "https://inst.eecs.berkeley.edu/~cs188/sp24/projects/proj6/"
       },
       {
         "name": "Scheme Intepreter",

@@ -114,7 +114,7 @@ export default function Home() {
           <IoMdMail className="icon-container" />
         </motion.a>
         <motion.a
-          href="https://drive.google.com/file/d/1xV2n1RpcpustAJ4uy5K7xyC20DJdYeH2/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SuX4rxKu2fazwdJUcAKZubMiDZgCpAjj/view?usp=drive_link"
           rel="noreferrer"
           target="_blank"
           whileHover={{ scale: 1.2 }}

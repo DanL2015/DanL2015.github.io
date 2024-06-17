@@ -61,7 +61,7 @@ These patches are created by other users, and the official ones are submitted [h
 
 To install a patch, perform the following steps:
 1. Download the patch and store it safely in a directory.
-2. Use the following command to patch the code: `path -p1 < /path/to/patch.diff`
+2. Use the following command to patch the code: `patch -p1 < /path/to/patch.diff`
 3. If there are any conflicts, manually resolve them by looking at the `.rej` files created.
 
 Unfortunately, this process is very tedious, especially when there are conflicts.

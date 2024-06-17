@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="bg-b5 dark:bg-b0 bg dark:bgDark">
+    <html lang="en" suppressHydrationWarning className="min-h-full">
+      <body className="bg-b5 dark:bg-b0 bgLight dark:bgDark">
         <Providers>
           <Navbar></Navbar>
           <Caret></Caret>

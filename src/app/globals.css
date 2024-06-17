@@ -33,18 +33,14 @@
   }
 
   .bgDark {
-    background: rgb(13, 17, 23);
-    background: radial-gradient(
-      ellipse at 80% 50%,
-      rgba(13, 17, 23, 1) 0%,
-      rgba(33, 38, 45, 1) 62%,
-      rgba(73, 108, 140, 1) 100%
-    );
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
     z-index: -10;
   }
 
-  .bg {
-    background-image: linear-gradient(315deg, #89929b 0%, #ecf2f8 74%);
+  .bgLight {
+    background-color: #f9fcff;
+    background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
     z-index: -10;
   }
 

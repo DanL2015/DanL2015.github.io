@@ -129,22 +129,22 @@
   }
 
   .markdown h1 {
-    @apply font-sans text-4xl font-bold my-2;
+    @apply font-sans text-4xl font-bold my-4;
   }
   .markdown h2 {
-    @apply font-sans text-3xl font-bold my-2;
+    @apply font-sans text-3xl font-bold my-4;
   }
   .markdown h3 {
-    @apply font-sans text-2xl font-bold my-2;
+    @apply font-sans text-2xl font-bold my-4;
   }
   .markdown h4 {
-    @apply font-sans text-xl font-bold my-2;
+    @apply font-sans text-xl font-bold my-4;
   }
   .markdown h5 {
-    @apply font-sans text-lg font-bold my-2;
+    @apply font-sans text-lg font-bold my-4;
   }
   .markdown h6 {
-    @apply font-sans text-base font-bold my-2;
+    @apply font-sans text-base font-bold my-4;
   }
   .content pre {
     @apply p-8 font-mono my-8 rounded-lg bg-b3 dark:bg-b2;
@@ -154,6 +154,9 @@
   }
   .markdown p {
     @apply font-sans;
+  }
+  .markdown a {
+    @apply font-sans text-blue hover:underline;
   }
   .markdown ul {
     @apply list-disc ml-4 my-2 marker:text-b1 dark:marker:text-b4;

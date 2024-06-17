@@ -53,7 +53,10 @@ export default function Post({ params }) {
             );
           })}
         <div className="flex-1"></div>
-        <div className="text-b2 dark:text-b3 text-xl">{post.data.date}</div>
+        <div className="flex flex-col items-end">
+          <div className="text-b2 dark:text-b3 text-xl">{post.data.date}</div>
+          <div className="text-b2 dark:text-b3 text-xl">{(Math.ceil(post.content.length/300).toString())} minute(s)</div>
+        </div>
       </div>
 
       <Break></Break>

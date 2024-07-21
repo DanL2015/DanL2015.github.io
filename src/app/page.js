@@ -73,7 +73,7 @@ export default function Home() {
       <div className="section">
         <p>
           Welcome to my website! My name is <b>Daniel Liu</b>, and I&apos;m a{" "}
-          <b>Sophomore</b> at <b>UC Berkeley</b> majoring in{" "}
+          <b>Junior</b> at <b>UC Berkeley</b> majoring in{" "}
           <b>Computer Science</b> and minoring in <b>Data Science</b>. I am also
           a part of Berkeley&apos;s <b>Upsilon Pi Epsilon (UPE)</b> chapter.
         </p>

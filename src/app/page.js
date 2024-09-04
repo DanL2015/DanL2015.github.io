@@ -60,7 +60,7 @@ export default function Home() {
           className="text-3xl md:text-6xl dark:text-b5 text-b0 font-sans m-4"
         ></TypeAnimation>
         <div className="text-lg md:text-2xl dark:text-b3 text-b2 md:self-end m-4">
-          <b>Computer Science</b> and <b>Data Science</b> at <b>UC Berkeley</b>
+          <b>Computer Science</b>, <b>Economics</b>, and <b>Data Science</b> at <b>UC Berkeley</b>
         </div>
       </motion.div>
       <Break></Break>
@@ -73,8 +73,8 @@ export default function Home() {
       <div className="section">
         <p>
           Welcome to my website! My name is <b>Daniel Liu</b>, and I&apos;m a{" "}
-          <b>Junior</b> at <b>UC Berkeley</b> majoring in{" "}
-          <b>Computer Science</b> and minoring in <b>Data Science</b>. I am also
+          <b>Junior</b> at <b>UC Berkeley</b> double majoring in{" "}
+          <b>Computer Science</b> and <b>Economics</b>, and minoring in <b>Data Science</b>. I am also
           a part of Berkeley&apos;s <b>Upsilon Pi Epsilon (UPE)</b> chapter.
         </p>
         <p>
@@ -211,6 +211,9 @@ export default function Home() {
             <a href="https://www.cs61c.org/">CS 61C</a>: Great Ideas in Computer
             Architecture - <b>A+</b>
           </li>
+          <li>
+            <a href="https://classes.berkeley.edu/content/2023-fall-econ-1-001-lec-001">Econ 1</a>: Introduction to Economics - <b>A+</b>
+          </li>
         </ul>
       </div>
       <div className="section-bg">
@@ -231,6 +234,28 @@ export default function Home() {
           <li>
             <a href="https://cs170.org/">CS 170</a>: Efficient Algorithms and
             Intractable Problems - <b>A</b>
+          </li>
+        </ul>
+      </div>
+      <div className="section-bg">
+        <h2>Fall 2024</h2>
+        <ul>
+          <li>
+            <a href="https://classes.berkeley.edu/content/2024-spring-econ-100a-001-lec-001">
+              Econ 100A
+            </a>
+            : Microeconomics - <b>Current</b>
+          </li>
+          <li>
+            <a href="https://cs162.org/">CS 162</a>: Operating Systems -{" "}
+            <b>Current</b>
+          </li>
+          <li>
+            <a href="https://www2.eecs.berkeley.edu/Courses/EECS127/">EECS 127</a>:
+            Optimization Models in Engineering - <b>Current</b>
+          </li>
+          <li>
+            <a href="https://gamescrafters.berkeley.edu/">CS198-199</a>: Gamescrafters - <b>Current</b>
           </li>
         </ul>
       </div>
